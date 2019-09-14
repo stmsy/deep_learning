@@ -28,3 +28,10 @@ def _nand(x1: int, x2: int,  w1: float = -0.5, w2: float = -0.5,
         return 1
     else:
         return 0
+
+
+def xor(x1: int, x2: int) -> int:
+    """Evaluate the XOR gate as single perceptron."""
+    s1 = _nand(x1, x2)
+    s2 = _or(x1, x2)
+    return _and(s1, s2)
