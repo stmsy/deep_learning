@@ -3,6 +3,11 @@
 import numpy as np
 
 
+def identity(x: np.array) -> np.array:
+    """Return the value of identity function."""
+    return x
+
+
 def step(x: np.array, thres: float = 0.0) -> np.array:
     """Return the value of stepu function following the threshold provided."""
     y = x >= thres
