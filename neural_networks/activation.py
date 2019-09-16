@@ -4,10 +4,7 @@ import numpy as np
 
 
 def step(x: np.array, thres: float = 0.0) -> np.array:
-    """
-    Return 1 if the element of x is greater than or equal to the threshold
-    else return 0.
-    """
+    """Return the value of stepu function following the threshold provided."""
     y = x >= thres
     return y.astype(np.int)
 
@@ -18,7 +15,7 @@ def sigmoid(x: np.array) -> np.array:
 
 
 def relu(x: np.array) -> np.array:
-    """Return the maximum of two values."""
+    """Return the value of ReLU function."""
     return np.maximum(0, x)
 
 
